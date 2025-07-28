@@ -289,7 +289,7 @@ section, footer{
   url('/img/bg/overlay.avif'),
   url('/img/bg/bg.webp')
   repeat;
-  padding-top: 100px;
+  padding-top: 150px;
 }
 #hero .container{
   max-width: 680px;
