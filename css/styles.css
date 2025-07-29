@@ -486,6 +486,9 @@ h1{
     #hero p{
       font-size: 18px;
     }
+    #hero {
+      padding-top: 150px;
+    }
 }
 
 /* hero */
