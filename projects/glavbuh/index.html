@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="index, follow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Glavbuh Ltd — Construction Website | Elements Agency</title>
+<meta name="description" content="We designed and built a professional business website for Glavbuh Ltd, a UK construction and renovation company. Clean design, fast load, mobile-friendly.">
+<meta name="author" content="Elements Agency">
+
+<meta property="og:title" content="Glavbuh Ltd — Construction Website | Elements Agency">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://elementsagency.co.uk/projects/glavbuh/">
+<meta property="og:description" content="We designed and built a professional business website for Glavbuh Ltd, a UK construction and renovation company.">
+<meta property="og:image" content="https://elementsagency.co.uk/img/projects-new/glavbuh.webp">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="Elements Agency">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@hello_elements">
+<meta name="twitter:title" content="Glavbuh Ltd — Construction Website | Elements Agency">
+<meta name="twitter:description" content="Professional business website for a UK construction and renovation company.">
+<meta name="twitter:image" content="https://elementsagency.co.uk/img/projects-new/glavbuh.webp">
+
+<link rel="icon" href="/img/favicon/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/img/favicon/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/img/favicon/favicon.png">
+
+<link rel="canonical" href="https://elementsagency.co.uk/projects/glavbuh/"/>
+
+<!-- Breadcrumb schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://elementsagency.co.uk/"},
+    {"@type": "ListItem", "position": 2, "name": "Projects", "item": "https://elementsagency.co.uk/projects/"},
+    {"@type": "ListItem", "position": 3, "name": "Glavbuh Ltd"}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Glavbuh Ltd — Business Website",
+  "description": "Professional business website for a UK construction and renovation company.",
+  "url": "https://glavbuh.co.uk/",
+  "creator": {
+    "@type": "Organization",
+    "name": "Elements Agency",
+    "url": "https://elementsagency.co.uk"
+  }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #16160f;
+  --ink-2: #3a3a32;
+  --muted: #6e6e65;
+  --muted-light: #9e9e94;
+  --border: #e6e6e0;
+  --border-dark: #cfcfc8;
+  --bg: #f9f9f6;
+  --white: #ffffff;
+  --accent: #1a56db;
+  --accent-dark: #1447c0;
+  --accent-light: #eff4ff;
+  --green: #16a34a;
+  --green-bg: #f0fdf4;
+  --green-border: #bbf7d0;
+  --radius: 16px;
+  --radius-sm: 10px;
+  --radius-xs: 6px;
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'DM Sans', sans-serif;
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --nav-h: 66px;
+  --container: 1120px;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-body); background: var(--white); color: var(--ink); font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+
+/* NAV */
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; height: var(--nav-h); background: rgba(255,255,255,0.93); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid var(--border); transition: box-shadow 0.3s; }
+nav.scrolled { box-shadow: 0 2px 24px rgba(0,0,0,0.06); }
+.nav-inner { max-width: var(--container); margin: 0 auto; padding: 0 2rem; height: 100%; display: flex; align-items: center; justify-content: space-between; }
+.nav-logo { font-family: var(--font-display); font-size: 22px; font-weight: 500; color: var(--ink); text-decoration: none; letter-spacing: -0.03em; }
+.nav-logo span { color: var(--accent); }
+.nav-links { display: flex; align-items: center; gap: 2rem; list-style: none; }
+.nav-links a { font-size: 14px; color: var(--muted); text-decoration: none; transition: color 0.2s; font-weight: 400; }
+.nav-links a:hover { color: var(--ink); }
+.nav-links a.active { color: var(--ink); font-weight: 500; }
+.nav-cta { display: flex; align-items: center; }
+.btn { display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-body); font-size: 14px; font-weight: 500; padding: 10px 22px; border-radius: 100px; text-decoration: none; cursor: pointer; border: none; transition: all 0.2s var(--ease); white-space: nowrap; }
+.btn-primary { background: var(--accent); color: white; }
+.btn-primary:hover { background: var(--accent-dark); transform: translateY(-1px); box-shadow: 0 8px 24px rgba(26,86,219,0.25); }
+.btn-outline { background: transparent; color: var(--ink); border: 1px solid var(--border-dark); }
+.btn-outline:hover { border-color: var(--ink); background: var(--bg); }
+.btn-lg { font-size: 16px; padding: 14px 34px; }
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
+.hamburger span { display: block; width: 22px; height: 1.5px; background: var(--ink); transition: all 0.3s; transform-origin: center; }
+.hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+.mobile-menu { display: none; position: fixed; top: var(--nav-h); left: 0; right: 0; background: white; border-bottom: 1px solid var(--border); padding: 1.5rem 2rem; z-index: 99; flex-direction: column; }
+.mobile-menu.open { display: flex; }
+.mobile-menu a { font-size: 16px; color: var(--ink); text-decoration: none; padding: 0.75rem 0; border-bottom: 1px solid var(--border); }
+.mobile-menu a:last-child { border-bottom: none; color: var(--accent); font-weight: 500; }
+
+/* PAGE */
+.page-wrap { padding-top: var(--nav-h); }
+
+/* BREADCRUMB */
+.breadcrumb-bar { padding: 1rem 2rem; border-bottom: 1px solid var(--border); background: var(--bg); }
+.breadcrumb-inner { max-width: var(--container); margin: 0 auto; display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--muted); flex-wrap: wrap; }
+.breadcrumb-inner a { color: var(--muted); text-decoration: none; }
+.breadcrumb-inner a:hover { color: var(--ink); }
+.breadcrumb-sep { color: var(--border-dark); }
+.breadcrumb-current { color: var(--ink); }
+
+/* HERO */
+.project-hero { padding: 64px 2rem 56px; background: var(--white); border-bottom: 1px solid var(--border); }
+.project-hero-inner { max-width: var(--container); margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+.section-label { display: inline-flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 1.25rem; }
+.section-label::before { content: ''; display: block; width: 18px; height: 1px; background: var(--muted-light); }
+h1 { font-family: var(--font-display); font-size: clamp(38px, 5vw, 58px); font-weight: 400; letter-spacing: -0.02em; line-height: 1.15; color: var(--ink); margin-bottom: 0.75rem; }
+.project-hero-desc { font-size: 17px; color: var(--muted); line-height: 1.75; margin-bottom: 2rem; }
+.project-hero-actions { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+
+/* Project details table */
+.project-details { display: flex; flex-direction: column; gap: 0; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+.detail-row { display: flex; align-items: center; border-bottom: 1px solid var(--border); }
+.detail-row:last-child { border-bottom: none; }
+.detail-label { font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted-light); padding: 0.9rem 1.25rem; min-width: 110px; border-right: 1px solid var(--border); background: var(--bg); flex-shrink: 0; }
+.detail-value { font-size: 14px; color: var(--ink); padding: 0.9rem 1.25rem; }
+.detail-value a { color: var(--accent); text-decoration: none; }
+.detail-value a:hover { text-decoration: underline; }
+.detail-tag { display: inline-flex; font-size: 11px; font-weight: 500; background: var(--accent-light); color: var(--accent); padding: 2px 10px; border-radius: 100px; }
+
+/* MAIN IMAGE */
+.project-image-section { padding: 0 2rem; background: var(--bg); border-bottom: 1px solid var(--border); }
+.project-image-inner { max-width: var(--container); margin: 0 auto; }
+.project-main-img { width: 100%; border-radius: 0; overflow: hidden; border: 1px solid var(--border); border-top: none; }
+.project-main-img img { width: 100%; height: auto; display: block; }
+.project-main-img-placeholder { width: 100%; height: 500px; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #faf5ff, #ede9fe); }
+.project-main-img-placeholder span { font-family: var(--font-display); font-size: 32px; font-weight: 400; color: var(--ink-2); opacity: 0.35; letter-spacing: -0.02em; }
+
+/* CONTENT SECTIONS */
+.content-section { padding: 80px 2rem; }
+.content-section.bg-light { background: var(--bg); }
+.content-section.bg-dark { background: var(--ink); }
+.content-inner { max-width: var(--container); margin: 0 auto; }
+.content-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+
+h2 { font-family: var(--font-display); font-size: clamp(28px, 3.5vw, 42px); font-weight: 400; letter-spacing: -0.02em; line-height: 1.2; color: var(--ink); margin-bottom: 0.5rem; }
+h2 em { font-style: italic; color: var(--accent); }
+h3 { font-family: var(--font-display); font-size: 22px; font-weight: 400; letter-spacing: -0.02em; color: var(--ink); margin-bottom: 1rem; }
+p { color: var(--muted); line-height: 1.75; }
+
+/* Approach blocks */
+.approach-block { padding: 2rem; border: 1px solid var(--border); border-radius: var(--radius-sm); background: white; }
+.approach-block + .approach-block { margin-top: 1.5rem; }
+.approach-icon { width: 40px; height: 40px; background: var(--accent-light); border-radius: var(--radius-xs); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; }
+.approach-icon svg { width: 18px; height: 18px; stroke: var(--accent); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.approach-block h3 { font-size: 18px; margin-bottom: 0.75rem; }
+.approach-block p { font-size: 14px; margin: 0; }
+
+/* What we delivered list */
+.delivered-list { list-style: none; display: flex; flex-direction: column; gap: 12px; margin-top: 1.5rem; }
+.delivered-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: var(--muted); line-height: 1.6; }
+.delivered-check { width: 20px; height: 20px; background: var(--green-bg); border: 1px solid var(--green-border); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
+.delivered-check::after { content: ''; display: block; width: 6px; height: 4px; border-left: 1.5px solid var(--green); border-bottom: 1.5px solid var(--green); transform: rotate(-45deg) translateY(-1px); }
+
+/* Testimonial */
+.testimonial-card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: var(--radius); padding: 2.5rem; }
+.testimonial-stars { color: #f59e0b; font-size: 16px; letter-spacing: 2px; margin-bottom: 1.5rem; }
+.testimonial-text { font-family: var(--font-display); font-size: clamp(18px, 2.2vw, 22px); color: white; font-weight: 300; line-height: 1.6; font-style: italic; margin-bottom: 1.75rem; }
+.testimonial-author { display: flex; align-items: center; gap: 12px; }
+.testimonial-avatar { width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 500; color: white; flex-shrink: 0; }
+.testimonial-author-name { font-size: 14px; font-weight: 500; color: white; display: block; }
+.testimonial-author-meta { font-size: 12px; color: rgba(255,255,255,0.4); }
+.dark-section-label { display: inline-flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 1.25rem; }
+.dark-section-label::before { content: ''; display: block; width: 18px; height: 1px; background: rgba(255,255,255,0.2); }
+.dark-h2 { color: white; }
+.dark-h2 em { color: rgba(255,255,255,0.4); }
+
+/* Related projects */
+.related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
+.related-card { background: white; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s; display: flex; flex-direction: column; }
+.related-card:hover { border-color: var(--border-dark); box-shadow: 0 6px 24px rgba(0,0,0,0.07); transform: translateY(-2px); }
+.related-img { height: 160px; overflow: hidden; }
+.related-img img { width: 100%; height: 100%; object-fit: cover; object-position: top; transition: transform 0.4s var(--ease); display: block; }
+.related-card:hover .related-img img { transform: scale(1.04); }
+.related-img-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
+.related-body { padding: 1.25rem; flex: 1; display: flex; flex-direction: column; }
+.related-type { font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted-light); margin-bottom: 5px; }
+.related-body h3 { font-family: var(--font-display); font-size: 18px; font-weight: 400; letter-spacing: -0.02em; color: var(--ink); margin-bottom: 0.4rem; }
+.related-body p { font-size: 13px; color: var(--muted); line-height: 1.6; flex: 1; margin-bottom: 1rem; }
+.related-link { font-size: 13px; font-weight: 500; color: var(--accent); text-decoration: none; display: inline-flex; align-items: center; gap: 4px; margin-top: auto; }
+.related-link svg { width: 13px; height: 13px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+/* CTA */
+.cta-section { background: var(--bg); border-top: 1px solid var(--border); padding: 80px 2rem; }
+.cta-inner { max-width: var(--container); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 3rem; flex-wrap: wrap; }
+.cta-text h2 { font-size: clamp(26px, 3vw, 38px); margin-bottom: 0.5rem; }
+.cta-text p { font-size: 16px; color: var(--muted); max-width: 400px; }
+.cta-actions { display: flex; gap: 1rem; flex-wrap: wrap; flex-shrink: 0; }
+
+/* FOOTER */
+footer { background: var(--bg); border-top: 1px solid var(--border); padding: 4rem 2rem 2rem; }
+.footer-inner { max-width: var(--container); margin: 0 auto; }
+.footer-top { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+.footer-brand { font-family: var(--font-display); font-size: 22px; font-weight: 400; color: var(--ink); letter-spacing: -0.03em; text-decoration: none; display: block; margin-bottom: 1rem; }
+.footer-brand span { color: var(--accent); }
+.footer-tagline { font-size: 13px; color: var(--muted); margin-bottom: 1.25rem; line-height: 1.6; max-width: 260px; }
+.footer-contact a { display: block; font-size: 13px; color: var(--muted); text-decoration: none; margin-bottom: 4px; }
+.footer-contact a:hover { color: var(--ink); }
+.footer-col h4 { font-family: var(--font-display); font-size: 15px; font-weight: 400; color: var(--ink); margin-bottom: 1rem; }
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.footer-col ul a { font-size: 13px; color: var(--muted); text-decoration: none; }
+.footer-col ul a:hover { color: var(--ink); }
+.footer-bottom { border-top: 1px solid var(--border); padding-top: 1.5rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+.footer-bottom p { font-size: 12px; color: var(--muted-light); }
+.footer-social { display: flex; gap: 1rem; }
+.footer-social a { font-size: 12px; color: var(--muted-light); text-decoration: none; }
+.footer-social a:hover { color: var(--ink); }
+
+/* ANIMATIONS */
+.fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.6s var(--ease), transform 0.6s var(--ease); }
+.fade-up.visible { opacity: 1; transform: translateY(0); }
+.fade-up-2 { transition-delay: 0.1s; }
+.fade-up-3 { transition-delay: 0.2s; }
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .project-hero-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+  .content-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .related-grid { grid-template-columns: 1fr 1fr; }
+  .footer-top { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 700px) {
+  nav .nav-links, nav .nav-cta { display: none; }
+  .hamburger { display: flex; }
+  .project-hero { padding: 48px 1.25rem 44px; }
+  .project-image-section { padding: 0 1.25rem; }
+  .content-section { padding: 60px 1.25rem; }
+  .project-main-img-placeholder { height: 240px; }
+  .related-grid { grid-template-columns: 1fr; }
+  .cta-section { padding: 60px 1.25rem; }
+  .cta-inner { flex-direction: column; }
+  .cta-actions { width: 100%; flex-direction: column; }
+  .cta-actions .btn { width: 100%; justify-content: center; }
+  .footer-top { grid-template-columns: 1fr; gap: 2rem; }
+  footer { padding: 3rem 1.25rem 2rem; }
+  .breadcrumb-bar { padding: 0.75rem 1.25rem; }
+}
+
+/* COOKIE BANNER */
+.cookie-banner { position: fixed; bottom: 1.5rem; left: 1.5rem; right: 1.5rem; z-index: 9999; background: #16160f; border-radius: 16px; padding: 1.5rem 2rem; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; box-shadow: 0 8px 40px rgba(0,0,0,0.25); transform: translateY(calc(100% + 2rem)); opacity: 0; transition: transform 0.4s cubic-bezier(0.16,1,0.3,1), opacity 0.4s ease; pointer-events: none; }
+.cookie-banner.visible { transform: translateY(0); opacity: 1; pointer-events: all; }
+.cookie-banner-text { flex: 1; min-width: 220px; }
+.cookie-banner-text p { font-family: 'DM Sans', sans-serif; font-size: 14px; color: rgba(255,255,255,0.7); line-height: 1.65; margin: 0; }
+.cookie-banner-text a { color: rgba(255,255,255,0.9); text-decoration: underline; }
+.cookie-banner-text a:hover { color: white; }
+.cookie-banner-actions { display: flex; gap: 10px; flex-shrink: 0; flex-wrap: wrap; }
+.cookie-btn { font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 500; padding: 10px 22px; border-radius: 100px; border: none; cursor: pointer; transition: all 0.2s; white-space: nowrap; }
+.cookie-btn-accept { background: #1a56db; color: white; }
+.cookie-btn-accept:hover { background: #1447c0; transform: translateY(-1px); }
+.cookie-btn-reject { background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.8); }
+.cookie-btn-reject:hover { background: rgba(255,255,255,0.15); color: white; }
+
+@media (max-width: 600px) {
+  .cookie-banner { bottom: 1rem; left: 1rem; right: 1rem; padding: 1.25rem; flex-direction: column; align-items: flex-start; gap: 1rem; }
+  .cookie-banner-actions { width: 100%; }
+  .cookie-btn { flex: 1; text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent">
+  <div class="cookie-banner-text">
+    <p>We use cookies to analyse traffic and improve your experience. See our <a href="/privacy-policy/">Privacy Policy</a> for details.</p>
+  </div>
+  <div class="cookie-banner-actions">
+    <button class="cookie-btn cookie-btn-reject" id="cookie-reject">Reject all</button>
+    <button class="cookie-btn cookie-btn-accept" id="cookie-accept">Accept all</button>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav id="main-nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">Elements<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="/services/">Services</a></li>
+        <li><a href="/industries/">Industries</a></li>
+        <li><a href="/projects/">Projects</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+    <div class="nav-cta">
+      <a href="/contact/" class="btn btn-primary">Start a project</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="/services/">Services</a>
+  <a href="/industries/">Industries</a>
+  <a href="/projects/">Projects</a>
+  <a href="/blog/">Blog</a>
+  <a href="/about/">About</a>
+  <a href="/contact/">Start a project →</a>
+</div>
+
+<div class="page-wrap">
+
+  <!-- BREADCRUMB -->
+  <div class="breadcrumb-bar">
+    <div class="breadcrumb-inner">
+      <a href="/">Home</a>
+      <span class="breadcrumb-sep">›</span>
+      <a href="/projects/">Projects</a>
+      <span class="breadcrumb-sep">›</span>
+      <span class="breadcrumb-current">Glavbuh Ltd</span>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div class="project-hero">
+    <div class="project-hero-inner">
+      <div class="fade-up">
+        <div class="section-label">Business website</div>
+        <h1>Glavbuh Ltd</h1>
+        <p class="project-hero-desc">A clean, professional website for a UK construction and renovation company — built to showcase their work, present services clearly, and win new enquiries.</p>
+        <div class="project-hero-actions">
+          <a href="https://glavbuh.co.uk/" target="_blank" class="btn btn-primary btn-lg">View live website <svg style="width:14px;height:14px;stroke:white;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          <a href="/contact/" class="btn btn-outline btn-lg">Start your project</a>
+        </div>
+      </div>
+      <div class="fade-up fade-up-2">
+        <div class="project-details">
+          <div class="detail-row">
+            <div class="detail-label">Client</div>
+            <div class="detail-value">Glavbuh Ltd</div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-label">Industry</div>
+            <div class="detail-value">Construction & renovation</div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-label">Location</div>
+            <div class="detail-value">London, UK</div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-label">Services</div>
+            <div class="detail-value"><span class="detail-tag">Business website</span> &nbsp;<span class="detail-tag">SEO</span></div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-label">Timeline</div>
+            <div class="detail-value">1 month</div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-label">Website</div>
+            <div class="detail-value"><a href="https://glavbuh.co.uk/" target="_blank">glavbuh.co.uk ↗</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN IMAGE -->
+  <div class="project-image-section">
+    <div class="project-image-inner">
+      <div class="project-main-img">
+        <img src="/img/projects-new/glavbuh.webp" alt="Glavbuh Ltd website"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="project-main-img-placeholder" style="display:none;">
+          <span>Glavbuh Ltd</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT THE PROJECT -->
+  <div class="content-section">
+    <div class="content-inner">
+      <div class="content-grid">
+        <div class="fade-up">
+          <div class="section-label">About the project</div>
+          <h2>A website that works as hard as the business</h2>
+        </div>
+        <div class="fade-up fade-up-2">
+          <p style="margin-bottom:1rem;">Glavbuh Ltd is a construction and renovation company providing a range of building services for residential and commercial clients across London. The business focuses on quality workmanship, reliability, and delivering projects to a high standard.</p>
+          <p>They needed a professional online presence that would reflect the quality of their work, build trust with potential clients, and make it easy to get in touch. Their previous online presence wasn't doing the job — it didn't reflect the quality of their work or give potential clients the confidence to reach out.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- APPROACH -->
+  <div class="content-section bg-light">
+    <div class="content-inner">
+      <div class="content-grid">
+        <div class="fade-up">
+          <div class="section-label">Our approach</div>
+          <h2>Challenge & <em>solution</em></h2>
+          <p style="margin-top:1rem;">Every decision was made with one goal — give potential clients the confidence to pick up the phone.</p>
+        </div>
+        <div class="fade-up fade-up-2">
+          <div class="approach-block">
+            <div class="approach-icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            </div>
+            <h3>The challenge</h3>
+            <p>Glavbuh needed a website that presents their services and past work in a clear, professional way — one that builds trust immediately and works perfectly on mobile. The challenge was achieving this without overcomplicating the design or the user journey.</p>
+          </div>
+          <div class="approach-block">
+            <div class="approach-icon">
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <h3>The solution</h3>
+            <p>We designed a clean, structured website with a clear hierarchy — services up front, projects showcased visually, and an easy path to get in touch. Fast load times, full mobile optimisation, and strong SEO foundations baked in from day one.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WHAT WE DELIVERED -->
+  <div class="content-section">
+    <div class="content-inner">
+      <div class="content-grid">
+        <div class="fade-up">
+          <div class="section-label">Deliverables</div>
+          <h2>What we <em>delivered</em></h2>
+          <p style="margin-top:1rem;">A complete website build from strategy to launch — everything handled by us.</p>
+        </div>
+        <div class="fade-up fade-up-2">
+          <ul class="delivered-list">
+            <li><div class="delivered-check"></div>Custom website design — no templates, built specifically for Glavbuh</li>
+            <li><div class="delivered-check"></div>Mobile-first responsive layout — works perfectly on all devices</li>
+            <li><div class="delivered-check"></div>Clear services pages — easy for visitors to understand what they offer</li>
+            <li><div class="delivered-check"></div>Projects showcase — past work displayed to build trust and credibility</li>
+            <li><div class="delivered-check"></div>Fast page load speed — optimised images and clean code throughout</li>
+            <li><div class="delivered-check"></div>On-page SEO setup — meta tags, structure and local signals in place</li>
+            <li><div class="delivered-check"></div>Contact form and click-to-call — easy for potential clients to reach out</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TESTIMONIAL -->
+  <div class="content-section bg-dark">
+    <div class="content-inner">
+      <div class="content-grid">
+        <div class="fade-up">
+          <div class="dark-section-label">Client review</div>
+          <h2 class="dark-h2">What the client <em>said</em></h2>
+        </div>
+        <div class="fade-up fade-up-2">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Fast, simple, modern website. Exactly what we wanted. Work was done fast and without problems. Design, logo and content were all handled. Website turned out better than expected. Team was always in touch and all changes were done quickly. Would recommend."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">G</div>
+              <div>
+                <span class="testimonial-author-name">Glavbuh Ltd</span>
+                <span class="testimonial-author-meta">Google Review · 5.0 ★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RELATED PROJECTS -->
+  <div class="content-section bg-light">
+    <div class="content-inner">
+      <div class="section-label fade-up">More projects</div>
+      <h2 class="fade-up fade-up-2">Related work</h2>
+      <div class="related-grid fade-up fade-up-2">
+
+        <div class="related-card">
+          <div class="related-img">
+            <img src="/img/projects-new/red-garnet.webp" alt="Red Garnet Construction"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="related-img-placeholder" style="display:none;background:linear-gradient(135deg,#fff7ed,#ffedd5);"><span style="font-family:var(--font-display);font-size:16px;color:var(--ink-2);opacity:0.4;">Red Garnet</span></div>
+          </div>
+          <div class="related-body">
+            <div class="related-type">Business website</div>
+            <h3>Red Garnet Construction</h3>
+            <p>Modern website for a UK construction company showcasing projects, services and expertise.</p>
+            <a href="/projects/red-garnet-construction/" class="related-link">View project <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </div>
+
+        <div class="related-card">
+          <div class="related-img">
+            <img src="/img/projects-new/yk.webp" alt="YK Detailing"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="related-img-placeholder" style="display:none;background:linear-gradient(135deg,#eff6ff,#dbeafe);"><span style="font-family:var(--font-display);font-size:16px;color:var(--ink-2);opacity:0.4;">YK Detailing</span></div>
+          </div>
+          <div class="related-body">
+            <div class="related-type">Business website</div>
+            <h3>YK Detailing</h3>
+            <p>Modern website for a UK car detailing business attracting local customers via Google.</p>
+            <a href="/projects/yk-detailing/" class="related-link">View project <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </div>
+
+        <div class="related-card">
+          <div class="related-img">
+            <img src="/img/projects-new/woodera.webp" alt="Woodera"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="related-img-placeholder" style="display:none;background:linear-gradient(135deg,#f0fdf4,#dcfce7);"><span style="font-family:var(--font-display);font-size:16px;color:var(--ink-2);opacity:0.4;">Woodera</span></div>
+          </div>
+          <div class="related-body">
+            <div class="related-type">E-commerce website</div>
+            <h3>Woodera</h3>
+            <p>Custom Shopify e-commerce store for a UK supplier of premium outdoor structures.</p>
+            <a href="/projects/woodera/" class="related-link">View project <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-section">
+    <div class="cta-inner">
+      <div class="cta-text fade-up">
+        <h2>Want something like this?</h2>
+        <p>Tell us about your project and we'll help you build a website that works for your business.</p>
+      </div>
+      <div class="cta-actions fade-up fade-up-2">
+        <a href="/contact/" class="btn btn-primary btn-lg">Start your project</a>
+        <a href="/projects/" class="btn btn-outline btn-lg">View all projects</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <a href="/" class="footer-brand">Elements<span>.</span></a>
+        <p class="footer-tagline">Websites & digital marketing for small and medium businesses across the UK and beyond.</p>
+        <div class="footer-contact">
+          <a href="mailto:hello@elementsagency.co.uk">hello@elementsagency.co.uk</a>
+          <a href="tel:+447307051979">+44 7307 051979</a>
+          <a>London, UK</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="/services/website-design/">Website design & build</a></li>
+          <li><a href="/services/website-redesign/">Website redesign</a></li>
+          <li><a href="/services/online-stores/">Online stores</a></li>
+          <li><a href="/services/seo/">SEO</a></li>
+          <li><a href="/services/google-ads/">Google Ads</a></li>
+          <li><a href="/services/fb-ads/">Facebook & Instagram Ads</a></li>
+          <li><a href="/services/linkedin-ads/">LinkedIn Ads</a></li>
+          <li><a href="/services/email-marketing/">Email marketing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Industries</h4>
+        <ul>
+          <li><a href="/industries/restaurants/">Restaurants & hospitality</a></li>
+          <li><a href="/industries/trades/">Trades & construction</a></li>
+          <li><a href="/industries/automotive/">Cars & automotive</a></li>
+          <li><a href="/industries/agriculture/">Agriculture & rural</a></li>
+          <li><a href="/industries/retail/">Retail & e-commerce</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/projects/">Projects</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/faq/">FAQ</a></li>
+          <li><a href="/contact/">Contact us</a></li>
+          <li><a href="/privacy-policy/">Privacy policy</a></li>
+          <li><a href="/terms/">Terms & conditions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Elements Agency. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/company/elementsagencyuk/" target="_blank">LinkedIn</a>
+        <a href="https://www.instagram.com/elementsagencyuk/" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/elementsagencyuk/" target="_blank">Facebook</a>
+        <a href="https://x.com/hello_elements" target="_blank">X</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+const nav = document.getElementById('main-nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 20);
+});
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('open');
+  mobileMenu.classList.toggle('open');
+});
+mobileMenu.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    hamburger.classList.remove('open');
+    mobileMenu.classList.remove('open');
+  });
+});
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.08 });
+document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+
+(function() {
+  var banner = document.getElementById('cookie-banner');
+  var consent = localStorage.getItem('cookie-consent');
+
+  // Load analytics if already accepted
+  if (consent === 'accepted') {
+    loadAnalytics();
+  } else if (consent === null) {
+    // Show banner after short delay
+    setTimeout(function() {
+      banner.classList.add('visible');
+    }, 800);
+  }
+
+  document.getElementById('cookie-accept').addEventListener('click', function() {
+    localStorage.setItem('cookie-consent', 'accepted');
+    banner.classList.remove('visible');
+    loadAnalytics();
+  });
+
+  document.getElementById('cookie-reject').addEventListener('click', function() {
+    localStorage.setItem('cookie-consent', 'rejected');
+    banner.classList.remove('visible');
+  });
+
+  function loadAnalytics() {
+    // Load GA4
+    var ga = document.createElement('script');
+    ga.async = true;
+    ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-9KRKN16PFN';
+    document.head.appendChild(ga);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9KRKN16PFN');
+
+    // Load Meta Pixel
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1990809028417722');
+    fbq('track', 'PageView');
+  }
+})();
+</script>
+
+</body>
+</html>

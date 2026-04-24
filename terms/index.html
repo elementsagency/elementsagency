@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, follow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Terms & Conditions | Elements Agency</title>
+<meta name="description" content="Terms and conditions for Elements Agency web design and digital marketing services.">
+<meta name="author" content="Elements Agency">
+
+<link rel="icon" href="/img/favicon/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/img/favicon/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/img/favicon/favicon.png">
+
+<link rel="canonical" href="https://elementsagency.co.uk/terms/"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #16160f;
+  --muted: #6e6e65;
+  --muted-light: #9e9e94;
+  --border: #e6e6e0;
+  --border-dark: #cfcfc8;
+  --bg: #f9f9f6;
+  --white: #ffffff;
+  --accent: #1a56db;
+  --accent-dark: #1447c0;
+  --accent-light: #eff4ff;
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'DM Sans', sans-serif;
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --nav-h: 66px;
+  --container: 1120px;
+  --radius: 16px;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-body); background: var(--white); color: var(--ink); font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+
+/* NAV */
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; height: var(--nav-h); background: rgba(255,255,255,0.93); backdrop-filter: blur(14px); border-bottom: 1px solid var(--border); transition: box-shadow 0.3s; }
+nav.scrolled { box-shadow: 0 2px 24px rgba(0,0,0,0.06); }
+.nav-inner { max-width: var(--container); margin: 0 auto; padding: 0 2rem; height: 100%; display: flex; align-items: center; justify-content: space-between; }
+.nav-logo { font-family: var(--font-display); font-size: 22px; font-weight: 500; color: var(--ink); text-decoration: none; letter-spacing: -0.03em; }
+.nav-logo span { color: var(--accent); }
+.nav-links { display: flex; align-items: center; gap: 2rem; list-style: none; }
+.nav-links a { font-size: 14px; color: var(--muted); text-decoration: none; transition: color 0.2s; }
+.nav-links a:hover { color: var(--ink); }
+.nav-cta { display: flex; align-items: center; }
+.btn { display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-body); font-size: 14px; font-weight: 500; padding: 10px 22px; border-radius: 100px; text-decoration: none; border: none; cursor: pointer; transition: all 0.2s var(--ease); }
+.btn-primary { background: var(--accent); color: white; }
+.btn-primary:hover { background: var(--accent-dark); transform: translateY(-1px); box-shadow: 0 8px 24px rgba(26,86,219,0.25); }
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
+.hamburger span { display: block; width: 22px; height: 1.5px; background: var(--ink); transition: all 0.3s; transform-origin: center; }
+.hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+.mobile-menu { display: none; position: fixed; top: var(--nav-h); left: 0; right: 0; background: white; border-bottom: 1px solid var(--border); padding: 1.5rem 2rem; z-index: 99; flex-direction: column; }
+.mobile-menu.open { display: flex; }
+.mobile-menu a { font-size: 16px; color: var(--ink); text-decoration: none; padding: 0.75rem 0; border-bottom: 1px solid var(--border); }
+.mobile-menu a:last-child { border-bottom: none; color: var(--accent); font-weight: 500; }
+
+/* PAGE */
+.page-wrap { padding-top: var(--nav-h); }
+
+/* BREADCRUMB */
+.breadcrumb-bar { padding: 0.875rem 2rem; border-bottom: 1px solid var(--border); background: var(--bg); }
+.breadcrumb-inner { max-width: var(--container); margin: 0 auto; display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--muted); }
+.breadcrumb-inner a { color: var(--muted); text-decoration: none; }
+.breadcrumb-inner a:hover { color: var(--ink); }
+.breadcrumb-sep { color: var(--border-dark); }
+
+/* HERO */
+.legal-hero { padding: 64px 2rem 56px; background: var(--bg); border-bottom: 1px solid var(--border); }
+.legal-hero-inner { max-width: var(--container); margin: 0 auto; }
+.section-label { display: inline-flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 1.25rem; }
+.section-label::before { content: ''; display: block; width: 18px; height: 1px; background: var(--muted-light); }
+.legal-hero h1 { font-family: var(--font-display); font-size: clamp(36px, 5vw, 56px); font-weight: 400; letter-spacing: -0.02em; line-height: 1.15; color: var(--ink); margin-bottom: 1rem; }
+.legal-hero h1 em { font-style: italic; color: var(--accent); }
+.legal-hero-meta { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; margin-top: 1rem; }
+.legal-hero-meta span { font-size: 13px; color: var(--muted); }
+.legal-hero-meta .dot { width: 3px; height: 3px; border-radius: 50%; background: var(--border-dark); }
+
+/* CONTENT */
+.legal-body { padding: 60px 2rem 100px; background: var(--white); }
+.legal-inner { max-width: var(--container); margin: 0 auto; display: grid; grid-template-columns: 240px 1fr; gap: 5rem; align-items: start; }
+
+/* SIDEBAR */
+.legal-sidebar { position: sticky; top: calc(var(--nav-h) + 2rem); }
+.sidebar-label { font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted-light); margin-bottom: 1rem; }
+.sidebar-nav { list-style: none; display: flex; flex-direction: column; gap: 2px; }
+.sidebar-nav a { display: block; font-size: 14px; color: var(--muted); text-decoration: none; padding: 7px 12px; border-radius: 8px; transition: background 0.15s, color 0.15s; }
+.sidebar-nav a:hover { background: var(--bg); color: var(--ink); }
+
+/* DOCUMENT */
+.legal-doc { max-width: 720px; }
+.legal-doc h2 { font-family: var(--font-display); font-size: 24px; font-weight: 400; letter-spacing: -0.02em; color: var(--ink); margin-top: 3rem; margin-bottom: 1rem; padding-top: 2rem; border-top: 1px solid var(--border); }
+.legal-doc h2:first-child { margin-top: 0; padding-top: 0; border-top: none; }
+.legal-doc p { font-size: 15px; color: var(--muted); line-height: 1.8; margin-bottom: 1rem; }
+.legal-doc ul { padding-left: 1.25rem; margin-bottom: 1rem; display: flex; flex-direction: column; gap: 8px; }
+.legal-doc ul li { font-size: 15px; color: var(--muted); line-height: 1.7; }
+.legal-doc a { color: var(--accent); text-decoration: none; }
+.legal-doc a:hover { text-decoration: underline; }
+.legal-doc strong { color: var(--ink); font-weight: 500; }
+.legal-notice { background: var(--accent-light); border: 1px solid #c3d9ff; border-radius: var(--radius); padding: 1.25rem 1.5rem; margin-bottom: 2rem; }
+.legal-notice p { font-size: 14px; color: var(--accent); margin: 0; }
+
+/* FOOTER */
+footer { background: var(--bg); border-top: 1px solid var(--border); padding: 4rem 2rem 2rem; }
+.footer-inner { max-width: var(--container); margin: 0 auto; }
+.footer-top { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+.footer-brand { font-family: var(--font-display); font-size: 22px; font-weight: 400; color: var(--ink); letter-spacing: -0.03em; text-decoration: none; display: block; margin-bottom: 1rem; }
+.footer-brand span { color: var(--accent); }
+.footer-tagline { font-size: 13px; color: var(--muted); margin-bottom: 1.25rem; line-height: 1.6; max-width: 260px; }
+.footer-contact a { display: block; font-size: 13px; color: var(--muted); text-decoration: none; margin-bottom: 4px; }
+.footer-contact a:hover { color: var(--ink); }
+.footer-col h4 { font-family: var(--font-display); font-size: 15px; font-weight: 400; color: var(--ink); margin-bottom: 1rem; }
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.footer-col ul a { font-size: 13px; color: var(--muted); text-decoration: none; }
+.footer-col ul a:hover { color: var(--ink); }
+.footer-bottom { border-top: 1px solid var(--border); padding-top: 1.5rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+.footer-bottom p { font-size: 12px; color: var(--muted-light); }
+.footer-social { display: flex; gap: 1rem; }
+.footer-social a { font-size: 12px; color: var(--muted-light); text-decoration: none; }
+.footer-social a:hover { color: var(--ink); }
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .legal-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+  .legal-sidebar { display: none; }
+  .footer-top { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 700px) {
+  nav .nav-links, nav .nav-cta { display: none; }
+  .hamburger { display: flex; }
+  .legal-hero { padding: 48px 1.25rem 44px; }
+  .legal-body { padding: 40px 1.25rem 70px; }
+  .breadcrumb-bar { padding: 0.75rem 1.25rem; }
+  .footer-top { grid-template-columns: 1fr; gap: 2rem; }
+  footer { padding: 3rem 1.25rem 2rem; }
+}
+
+/* COOKIE BANNER */
+.cookie-banner { position: fixed; bottom: 1.5rem; left: 1.5rem; right: 1.5rem; z-index: 9999; background: #16160f; border-radius: 16px; padding: 1.5rem 2rem; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; box-shadow: 0 8px 40px rgba(0,0,0,0.25); transform: translateY(calc(100% + 2rem)); opacity: 0; transition: transform 0.4s cubic-bezier(0.16,1,0.3,1), opacity 0.4s ease; pointer-events: none; }
+.cookie-banner.visible { transform: translateY(0); opacity: 1; pointer-events: all; }
+.cookie-banner-text { flex: 1; min-width: 220px; }
+.cookie-banner-text p { font-family: 'DM Sans', sans-serif; font-size: 14px; color: rgba(255,255,255,0.7); line-height: 1.65; margin: 0; }
+.cookie-banner-text a { color: rgba(255,255,255,0.9); text-decoration: underline; }
+.cookie-banner-text a:hover { color: white; }
+.cookie-banner-actions { display: flex; gap: 10px; flex-shrink: 0; flex-wrap: wrap; }
+.cookie-btn { font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 500; padding: 10px 22px; border-radius: 100px; border: none; cursor: pointer; transition: all 0.2s; white-space: nowrap; }
+.cookie-btn-accept { background: #1a56db; color: white; }
+.cookie-btn-accept:hover { background: #1447c0; transform: translateY(-1px); }
+.cookie-btn-reject { background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.8); }
+.cookie-btn-reject:hover { background: rgba(255,255,255,0.15); color: white; }
+
+@media (max-width: 600px) {
+  .cookie-banner { bottom: 1rem; left: 1rem; right: 1rem; padding: 1.25rem; flex-direction: column; align-items: flex-start; gap: 1rem; }
+  .cookie-banner-actions { width: 100%; }
+  .cookie-btn { flex: 1; text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent">
+  <div class="cookie-banner-text">
+    <p>We use cookies to analyse traffic and improve your experience. See our <a href="/privacy-policy/">Privacy Policy</a> for details.</p>
+  </div>
+  <div class="cookie-banner-actions">
+    <button class="cookie-btn cookie-btn-reject" id="cookie-reject">Reject all</button>
+    <button class="cookie-btn cookie-btn-accept" id="cookie-accept">Accept all</button>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav id="main-nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">Elements<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="/services/">Services</a></li>
+        <li><a href="/industries/">Industries</a></li>
+        <li><a href="/projects/">Projects</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+    <div class="nav-cta">
+      <a href="/contact/" class="btn btn-primary">Start a project</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="/services/">Services</a>
+  <a href="/industries/">Industries</a>
+  <a href="/projects/">Projects</a>
+  <a href="/blog/">Blog</a>
+  <a href="/about/">About</a>
+  <a href="/contact/">Start a project →</a>
+</div>
+
+<div class="page-wrap">
+
+  <!-- BREADCRUMB -->
+  <div class="breadcrumb-bar">
+    <div class="breadcrumb-inner">
+      <a href="/">Home</a>
+      <span class="breadcrumb-sep">›</span>
+      <span>Terms & Conditions</span>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div class="legal-hero">
+    <div class="legal-hero-inner">
+      <div class="section-label">Legal</div>
+      <h1>Terms & <em>Conditions</em></h1>
+      <div class="legal-hero-meta">
+        <span>Effective date: April 2026</span>
+        <span class="dot"></span>
+        <span>Elements Agency</span>
+        <span class="dot"></span>
+        <span>United Kingdom</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- BODY -->
+  <div class="legal-body">
+    <div class="legal-inner">
+
+      <!-- SIDEBAR -->
+      <aside class="legal-sidebar">
+        <div class="sidebar-label">Contents</div>
+        <ul class="sidebar-nav">
+          <li><a href="#intro">1. Introduction</a></li>
+          <li><a href="#services">2. Services</a></li>
+          <li><a href="#quotes">3. Quotes & pricing</a></li>
+          <li><a href="#payment">4. Payment</a></li>
+          <li><a href="#project">5. Project process</a></li>
+          <li><a href="#ip">6. Intellectual property</a></li>
+          <li><a href="#content">7. Client content</a></li>
+          <li><a href="#liability">8. Liability</a></li>
+          <li><a href="#termination">9. Termination</a></li>
+          <li><a href="#confidentiality">10. Confidentiality</a></li>
+          <li><a href="#law">11. Governing law</a></li>
+          <li><a href="#contact">12. Contact</a></li>
+        </ul>
+      </aside>
+
+      <!-- DOCUMENT -->
+      <div class="legal-doc">
+
+        <div class="legal-notice">
+          <p>Please read these terms carefully before engaging our services. By commissioning work from Elements Agency, you agree to be bound by these terms and conditions.</p>
+        </div>
+
+        <h2 id="intro">1. Introduction</h2>
+        <p>These terms and conditions govern the relationship between Elements Agency ("we", "us", "our") and our clients ("you", "the client") for the provision of web design, development and digital marketing services.</p>
+        <p>Elements Agency is a digital agency operating in the United Kingdom. Our contact email is <a href="mailto:hello@elementsagency.co.uk">hello@elementsagency.co.uk</a>.</p>
+
+        <h2 id="services">2. Services</h2>
+        <p>We provide a range of digital services including but not limited to:</p>
+        <ul>
+          <li>Website design and development</li>
+          <li>Website redesign and improvement</li>
+          <li>E-commerce store design and development</li>
+          <li>Search engine optimisation (SEO)</li>
+          <li>Paid advertising management (Google Ads, Facebook Ads, LinkedIn Ads)</li>
+          <li>Email marketing setup and management</li>
+        </ul>
+        <p>The specific scope of services for each project is agreed in writing before work begins, either through a formal proposal or written confirmation by email.</p>
+
+        <h2 id="quotes">3. Quotes & pricing</h2>
+        <p>All quotes provided by Elements Agency are valid for 30 days from the date of issue unless otherwise stated. A quote is not a binding contract until both parties have confirmed the project in writing.</p>
+        <p>Our quoted prices are based on the project scope agreed at the time of quoting. If the scope changes during the project, we will provide a revised quote before proceeding with the additional work.</p>
+        <p>All prices are quoted in GBP (£) and are exclusive of VAT unless otherwise stated.</p>
+
+        <h2 id="payment">4. Payment</h2>
+        <p>Our standard payment terms are as follows:</p>
+        <ul>
+          <li><strong>One-off projects:</strong> 50% of the agreed fee is due before work begins. The remaining 50% is due upon completion, before the final files or access credentials are handed over.</li>
+          <li><strong>Monthly retainers:</strong> Payment is due at the start of each month. Work will not begin for that month until payment has been received.</li>
+          <li><strong>Ad spend:</strong> For paid advertising services, the advertising budget is paid directly to the platform (Google, Meta, LinkedIn) and is separate from our management fee.</li>
+        </ul>
+        <p>Late payments may result in work being paused until the outstanding balance is settled. We reserve the right to charge interest on overdue invoices in accordance with the Late Payment of Commercial Debts (Interest) Act 1998.</p>
+
+        <h2 id="project">5. Project process</h2>
+        <p>We will agree timelines for each project at the start of the engagement. Timelines are estimates and may be affected by delays in receiving content, feedback or approvals from the client.</p>
+        <p>The client is responsible for providing all required materials — including text, images, logos and access credentials — in a timely manner. Delays caused by the client may result in revised delivery timelines.</p>
+        <p>Each project includes a set number of revision rounds as agreed in the project scope. Revisions beyond the agreed number will be quoted and charged separately.</p>
+        <p>We will consider a project complete and trigger the final payment when the deliverables match the agreed scope, even if the client has not formally signed off. We will always notify the client before considering a project complete.</p>
+
+        <h2 id="ip">6. Intellectual property</h2>
+        <p>Upon receipt of full payment, the client receives full ownership of the final delivered work — including website files, design assets and written content created specifically for the project.</p>
+        <p>We retain the right to display the completed work in our portfolio and marketing materials unless the client requests otherwise in writing before the project begins.</p>
+        <p>Third-party elements included in the project — such as stock images, fonts, plugins or software licences — remain subject to their own licence terms. The client is responsible for maintaining any ongoing licences required to operate the website after handover.</p>
+        <p>We retain ownership of any proprietary tools, frameworks or code libraries that we use across multiple projects. These are licensed to the client for use within their specific project only.</p>
+
+        <h2 id="content">7. Client content</h2>
+        <p>The client is responsible for ensuring that all content provided to us — including text, images, logos and other materials — does not infringe the intellectual property rights of any third party and complies with all applicable laws.</p>
+        <p>We accept no liability for content provided by the client. If a claim arises relating to client-provided content, the client agrees to indemnify us against any resulting costs or damages.</p>
+
+        <h2 id="liability">8. Liability</h2>
+        <p>We will carry out all work with reasonable skill and care. However, we cannot guarantee specific outcomes such as search engine rankings, advertising performance or revenue increases, as these depend on factors outside our control.</p>
+        <p>Our total liability to the client for any claim arising from our services shall not exceed the total fees paid by the client in the three months preceding the claim.</p>
+        <p>We are not liable for any indirect, consequential or special loss, including loss of profits, loss of business or loss of data, whether arising from negligence, breach of contract or otherwise.</p>
+        <p>We are not responsible for any downtime, data loss or issues caused by third-party hosting providers, platforms or services.</p>
+
+        <h2 id="termination">9. Termination</h2>
+        <p><strong>One-off projects:</strong> Either party may terminate the project with written notice. If the client terminates, any work completed up to the point of termination will be invoiced at our standard hourly rate. The initial deposit is non-refundable.</p>
+        <p><strong>Monthly retainers:</strong> Either party may terminate a monthly retainer with 30 days' written notice. Any work carried out during the notice period will be charged at the agreed monthly rate.</p>
+        <p>We reserve the right to terminate immediately if the client acts in breach of these terms, fails to make payment or behaves in a manner that makes the working relationship untenable.</p>
+
+        <h2 id="confidentiality">10. Confidentiality</h2>
+        <p>Both parties agree to keep confidential any sensitive business information shared during the course of the engagement and not to disclose it to third parties without prior written consent.</p>
+        <p>This obligation does not apply to information that is already publicly available or that either party is legally required to disclose.</p>
+
+        <h2 id="law">11. Governing law</h2>
+        <p>These terms and conditions are governed by the laws of England and Wales. Any disputes arising from these terms shall be subject to the exclusive jurisdiction of the courts of England and Wales.</p>
+        <p>If any provision of these terms is found to be unenforceable, the remaining provisions shall continue in full force and effect.</p>
+
+        <h2 id="contact">12. Contact</h2>
+        <p>If you have any questions about these terms and conditions, please contact us:</p>
+        <ul>
+          <li><strong>Email:</strong> <a href="mailto:hello@elementsagency.co.uk">hello@elementsagency.co.uk</a></li>
+          <li><strong>WhatsApp:</strong> <a href="https://wa.me/447307051979">+44 7307 051979</a></li>
+          <li><strong>Website:</strong> <a href="https://elementsagency.co.uk">elementsagency.co.uk</a></li>
+        </ul>
+        <p style="margin-top:2rem;font-size:13px;color:var(--muted-light);">Last updated: April 2026</p>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <a href="/" class="footer-brand">Elements<span>.</span></a>
+        <p class="footer-tagline">Websites & digital marketing for small and medium businesses across the UK and beyond.</p>
+        <div class="footer-contact">
+          <a href="mailto:hello@elementsagency.co.uk">hello@elementsagency.co.uk</a>
+          <a href="tel:+447307051979">+44 7307 051979</a>
+          <a>London, UK</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="/services/website-design/">Website design & build</a></li>
+          <li><a href="/services/website-redesign/">Website redesign</a></li>
+          <li><a href="/services/online-stores/">Online stores</a></li>
+          <li><a href="/services/seo/">SEO</a></li>
+          <li><a href="/services/google-ads/">Google Ads</a></li>
+          <li><a href="/services/fb-ads/">Facebook & Instagram Ads</a></li>
+          <li><a href="/services/linkedin-ads/">LinkedIn Ads</a></li>
+          <li><a href="/services/email-marketing/">Email marketing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Industries</h4>
+        <ul>
+          <li><a href="/industries/restaurants/">Restaurants & hospitality</a></li>
+          <li><a href="/industries/trades/">Trades & construction</a></li>
+          <li><a href="/industries/automotive/">Cars & automotive</a></li>
+          <li><a href="/industries/agriculture/">Agriculture & rural</a></li>
+          <li><a href="/industries/retail/">Retail & e-commerce</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/projects/">Projects</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/faq/">FAQ</a></li>
+          <li><a href="/contact/">Contact us</a></li>
+          <li><a href="/privacy-policy/">Privacy policy</a></li>
+          <li><a href="/terms/">Terms & conditions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Elements Agency. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/company/elementsagencyuk/" target="_blank">LinkedIn</a>
+        <a href="https://www.instagram.com/elementsagencyuk/" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/elementsagencyuk/" target="_blank">Facebook</a>
+        <a href="https://x.com/hello_elements" target="_blank">X</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+const nav = document.getElementById('main-nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 20);
+});
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('open');
+  mobileMenu.classList.toggle('open');
+});
+mobileMenu.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    hamburger.classList.remove('open');
+    mobileMenu.classList.remove('open');
+  });
+});
+
+(function() {
+  var banner = document.getElementById('cookie-banner');
+  var consent = localStorage.getItem('cookie-consent');
+
+  // Load analytics if already accepted
+  if (consent === 'accepted') {
+    loadAnalytics();
+  } else if (consent === null) {
+    // Show banner after short delay
+    setTimeout(function() {
+      banner.classList.add('visible');
+    }, 800);
+  }
+
+  document.getElementById('cookie-accept').addEventListener('click', function() {
+    localStorage.setItem('cookie-consent', 'accepted');
+    banner.classList.remove('visible');
+    loadAnalytics();
+  });
+
+  document.getElementById('cookie-reject').addEventListener('click', function() {
+    localStorage.setItem('cookie-consent', 'rejected');
+    banner.classList.remove('visible');
+  });
+
+  function loadAnalytics() {
+    // Load GA4
+    var ga = document.createElement('script');
+    ga.async = true;
+    ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-9KRKN16PFN';
+    document.head.appendChild(ga);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9KRKN16PFN');
+
+    // Load Meta Pixel
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1990809028417722');
+    fbq('track', 'PageView');
+  }
+})();
+</script>
+
+</body>
+</html>
